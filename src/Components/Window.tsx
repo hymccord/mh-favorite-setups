@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 
+import Box from '@mui/material/Box';
+import Menu from './Menu';
+
 export default function Window({setHandleOpen}: any): JSX.Element | null {
     const [open, setOpen] = useState(false);
 
@@ -13,22 +16,9 @@ export default function Window({setHandleOpen}: any): JSX.Element | null {
 
     if (open) {
         return (
-            <div className="App">
-                <header className="App-header">
-                    <p>
-                        Edit <code>src/App.js</code> and save. Then, refresh the
-                        page 🔒.
-                    </p>
-                    <a
-                        className="App-link"
-                        href="https://reactjs.org"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >
-                        Learn React
-                    </a>
-                </header>
-            </div>
+            <Box>
+                <Menu />
+            </Box>
         );
     }
 

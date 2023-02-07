@@ -20,6 +20,8 @@ export default class FavoriteSetupsModule {
     async load() {
         this.renderSettingsMenuOption();
         this.renderSettings();
+
+        this.openSettings(null!);
     }
 
     renderSettingsMenuOption() {
@@ -63,7 +65,10 @@ export default class FavoriteSetupsModule {
     }
 
     openSettings(e: MouseEvent) {
+        log('opening settings panel');
         e?.preventDefault();
+        log('opening settings panel1');
         handleOpen?.(true);
+        log('opening settings panel2');
     }
 }

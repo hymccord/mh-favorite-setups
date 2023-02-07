@@ -22,7 +22,7 @@ code {
 	background-color: transparent;
 	color: var(--seventv-text-color);
 
-	pointer-events: none;
+	/* pointer-events: none; */
 }
 
 .mhfs-overlay > .seventv-clickable-overlay-child {
